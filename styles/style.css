@@ -47,21 +47,24 @@ nav{
 }
 .header-container{
     height: 585px;
-     margin-top: 50px;
-    background-image: url("../images/main-camera.png"),url("../images/Circle\ design.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-attachment:inherit;
-    position: relative;
-
+    display: flex;
+    gap: 120px;
+   
 }
 
 .header-content{
-   position: absolute;
-   top: 40%;
-   left: 25%;
-   transform: translate(-50%,-50%);
-   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+.header-img{
+    width: 50%;
+    margin-top: 80px;
+}
+.header-img img{
+    position: absolute;
+    
 }
 .header-content h1{
     font-size: 45px;
@@ -261,7 +264,7 @@ footer .footer-container{
         text-align: center;
     }
     .header-content{
-        margin-top: -140px;
+        /* margin-top: -140px; */
         justify-content: center;
         align-items: center;
     }
@@ -269,13 +272,13 @@ footer .footer-container{
         font-size: 40px;
     }
     .header-img {
-        width: 90wh;
-        height: auto;
+        width: 38vw;
         height: 80vh;
         padding: 10px;
+        
     }
-    .header-img img{
-        width: 100%;
+    .header-img>img{
+        width: 80%;
         height: 100%;
     }
     .brand{
@@ -303,6 +306,7 @@ footer .footer-container{
     }
     .featerud-img{
         width: 100%;
+        height: auto;
     }
     footer{
         width: 100%;
@@ -318,18 +322,34 @@ footer .footer-container{
     }
     .header-container{
         padding-left: 20px;
+        gap: 0px;
     }
-    
+    .header-content{
+        width: 50%;
+        margin-top: -100px;
+    }
     .header-content h1{
         font-size: 30px;
+    }
+    .header-img img{
+        width: 50%;
+        height: auto;
+        margin-top: 30px;
     }
     .shoping-cards{
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
     }
+    .featerud-img{
+        width: 80%;
+    }
+    .featerud-img img{
+        width: 100%;
+    }
     .featerud-product{
         gap: 36px;
     }
+
     .featured-content h1{
         font-size: 25px;
     }
